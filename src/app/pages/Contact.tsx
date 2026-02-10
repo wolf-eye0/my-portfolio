@@ -21,10 +21,10 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     toast.success("Message sent successfully! I'll get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
@@ -43,14 +43,14 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
+      value: "nihadpc1234567@gmail.com",
       href: "mailto:your.email@example.com",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "234098292349",
       href: "tel:+15551234567",
       gradient: "from-purple-500 to-pink-500",
     },
@@ -67,7 +67,7 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/yourusername",
+      href: "https://github.com/wolf-eye0",
       color: "hover:text-slate-900",
       gradient: "from-slate-600 to-slate-800",
     },
@@ -90,7 +90,7 @@ export function Contact() {
   return (
     <div className="py-20 relative overflow-hidden">
       <Toaster />
-      
+
       {/* Animated background elements */}
       <motion.div
         animate={{
@@ -142,7 +142,7 @@ export function Contact() {
           >
             Get In Touch
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -163,7 +163,7 @@ export function Contact() {
             className="lg:col-span-1 space-y-6"
           >
             <h2 className="text-2xl mb-6">Contact Information</h2>
-            
+
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.label}
@@ -215,8 +215,8 @@ export function Contact() {
                     initial={{ opacity: 0, y: 20, scale: 0 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ delay: 1 + index * 0.1 }}
-                    whileHover={{ 
-                      y: -10, 
+                    whileHover={{
+                      y: -10,
                       scale: 1.2,
                       rotate: [0, -10, 10, 0],
                     }}
@@ -333,9 +333,9 @@ export function Contact() {
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
-                        <Button 
-                          type="submit" 
-                          size="lg" 
+                        <Button
+                          type="submit"
+                          size="lg"
                           className="w-full group relative overflow-hidden"
                           disabled={isSubmitting}
                         >
@@ -402,7 +402,7 @@ export function Contact() {
             >
               Let's Build Something Amazing Together
             </motion.h2>
-            
+
             <motion.p
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -413,7 +413,7 @@ export function Contact() {
               Whether you have a project in mind, need consultation, or just want to chat about
               tech, I'd love to hear from you.
             </motion.p>
-            
+
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -433,7 +433,7 @@ export function Contact() {
                   </a>
                 </Button>
               </motion.div>
-              
+
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
