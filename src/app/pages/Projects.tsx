@@ -16,7 +16,7 @@ export function Projects() {
       image: null,
       tags: ["Python", "TensorFlow", "Data Science", "Algorithm"],
       // REPLACE THIS with the specific link to your AI repository!
-      github: "https://github.com/YOUR_USERNAME/YOUR_AI_REPO_NAME",
+      github: "https://github.com/wolf-eye0/H.Thon",
     }
   ];
 
